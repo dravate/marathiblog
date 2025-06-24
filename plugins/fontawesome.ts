@@ -1,0 +1,97 @@
+import { defineNuxtPlugin } from "#app";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+import { faFacebook, faWhatsapp,  faXTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+
+
+// Import only the icons you want
+import {
+  faCloud,
+  faLaptopCode,
+  faMobileAlt,
+  faDatabase,
+  faChartLine,
+  faBroom,
+  faIndustry,
+  faShoppingCart,
+  faShirt,
+  faKey,
+  faChevronDown,
+  faUser,
+  faCoffee,
+  faEdit,
+  faSave,
+  faCheck,
+  faTrash,
+  faSignOut,
+  faCancel,
+  faLocationDot,
+  faCalendar,
+  faIndianRupee,
+  faShare,
+  faSignIn,
+  faPhone,
+  faPlus,
+  faGraduationCap,
+  faHeart,
+  faTimes,
+  faEnvelope,
+  faGlobe,
+  faCog,
+  faFastForward,
+  faArrowLeft,
+  faImage,
+  faBox,
+  faFileInvoice,
+  faDoorOpen,
+  faCamera,
+} from "@fortawesome/free-solid-svg-icons";
+
+// Add them to the library
+library.add(
+  faCloud,
+  faLaptopCode,
+  faMobileAlt,
+  faDatabase,
+  faChartLine,
+  faBroom,
+  faIndustry,
+  faShoppingCart,
+  faShirt,
+  faKey,
+  faChevronDown,
+  faUser,
+  faCoffee,
+  faEdit,
+  faSave,
+  faCheck,
+  faTrash,
+  faSignOut,
+  faCancel,
+  faLocationDot,
+  faCalendar,
+  faIndianRupee,
+  faShare,
+  faSignIn,
+  faChevronDown,
+  faPhone,
+  faPlus,
+  faGraduationCap,
+  faHeart,
+  faTimes,
+  faEnvelope,
+  faGlobe,
+  faCog,
+  faFastForward,
+  faArrowLeft,
+  faImage,
+  faBox,
+  faFileInvoice,
+  faDoorOpen,
+  faCamera,
+  faFacebook, faWhatsapp, faXTwitter, faLinkedin
+);
+
+export default defineNuxtPlugin((nuxtApp) => {
+  nuxtApp.vueApp.component("FontAwesomeIcon", FontAwesomeIcon);
+});
